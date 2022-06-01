@@ -1,0 +1,11 @@
+{
+  "name": "chess_stockfish",
+  "version": "1.0.0",
+  "description": "Chess server using stockfish engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "author": "F",
+  "license": "ISC"
+}
