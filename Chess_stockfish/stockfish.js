@@ -85,5 +85,5 @@ module.exports.move = function(move) {
 }
 
 module.exports.undo = function() {
-	_moveList.pop(move);
+	_moveList.pop();
 }

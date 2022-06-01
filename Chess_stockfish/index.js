@@ -14,7 +14,7 @@ async function getInput(prompt) {
 }
 
 async function loop() {
-	await stockfish.init({ debug: true });
+	await stockfish.init({ debug: false });
 
 	let input = ``;
 	while (input != "quit") {
@@ -25,6 +25,7 @@ async function loop() {
 		}
 		else {
 			let bestMove = await stockfish.moveAndSearch(input);
+			console.log(`Black move: ${bestMove}`);
 			stockfish.move(bestMove);
 		}
 	}
